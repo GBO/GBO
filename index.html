@@ -159,7 +159,7 @@ To use:
   <script type="text/javascript">
     function reqListener () {
       if (this.status==200) {
-        eout.innerHTML = markdown(this.responseText);
+        document.querySelector(".markdown").innerHTML = markdown(this.responseText);
       } else {
         throw new Error(this.statusText);
       }
